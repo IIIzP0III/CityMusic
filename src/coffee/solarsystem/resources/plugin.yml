@@ -1,0 +1,13 @@
+name: CityMusic
+version: 0.1
+load: STARTUP
+author: IIIzP0III
+main: coffee.solarsystem.CityMusic.CityMusic
+softdepend: [NoteBlockApi, Towny]
+api-version: 1.18
+
+commands:
+    citymusic:
+      description: citymusic cmd
+    cm:
+      description: alias citymusic
