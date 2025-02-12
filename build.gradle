@@ -4,7 +4,6 @@ id 'java'
 id 'java-library'
 }
 group = 'coffee.solarsystem.CityMusic'
-version = '0.0.1'
 
 repositories {
     maven {
@@ -12,22 +11,22 @@ repositories {
         url = 'https://repo.papermc.io/repository/maven-public'
     }
     maven {
-        url = 'https://hub.spigotmc.org/nexus/content/repository/public/'
+        url = 'https://hub.spigotmc.org/nexus/content/repositories/public/'
     }
     mavenCentral()
-//    flatDir{(dirs 'libs')
-//        }
+    flatDir{(dirs 'libs')
+        }
 }
 
 dependencies {
-//    implementation 'org.bukkit.bukkit:1.15.4-R0.1-SNAPSHOT'
+    implementation 'org.bukkit:bukkit:1.15.2-R0.1-SNAPSHOT' //    //    implementation 'org.bukkit:bukkit:1.15.2-R0.1-SNAPSHOT'
     implementation 'io.papermc.paper:paper-api:1.21-R0.1-SNAPSHOT'
     implementation 'org.apache.commons:commons-text:1.11.0'
-//    implementation name: 'spigot-api-1.20.4-R0.1'
+    implementation 'org.spigotmc:spigot-api:1.15.2-R0.1-SNAPSHOT' //    //    implementation 'org.spigotmc:spigot-api:1.15.2-R0.1-SNAPSHOT'
 }
 
 java {
     toolchain {
         languageVersion = JavaLanguageVersion.of(21);
-    }
+    };
 }
